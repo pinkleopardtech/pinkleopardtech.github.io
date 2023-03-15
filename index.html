@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Tech</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="nav_header">
+                   <span>J</span>OSEPH.
+                </h1>
+                <!--<img class="images/" src="images/logo.png" alt="JosephComputerSchool"> -->
+                <ul id="sidemenu" >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full-Stack Webdeveloper</p>
+                <h1>Hi, I'm <span>Joseph </span><br>Otieno from Kenya</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- -------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Energetic and passionate student currently looking for opportunities to utilize and grow my technical abilities as a programmer (full stack developer, frontend, or backend developer).
+                        I have desire to learn and embrace the latest technologies. I love solving challenging problems. I enjoy the process itself, the teamwork and feeling of belonging, and most of all that great sense of satisfaction when the problem is solved. I strive to have order and structure in everything I do and am passionate about producing high-quality, clean, and well-structured code that gives an understanding of the business purpose behind it</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id='skills'>
+                            <ul>
+                                <li><span>Webdeveloper</span><br>Designing & Developing Websites</li>
+                                <li><span>Machine programmer</span><br>Using Arduino Uno for carring out tasks</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id='education'>
+                            <ul>
+                                <li><span>2022-Current</span><br>ICT </li>
+                                <li><span>Diploma in information Technology-Kenya (2021 - 2023)</span><br>Bukura Agricultural College</li>
+                            </ul>
+                        </div>
+                       
+                        <div class="tab-contents" id='experience'>
+                            <ul>
+                                <li><span>2021 - 2023</span><br>Full-Stack development intensive</li>
+                                <li><span>2023-Current</span><br>Network Penetration testing and ethical harker</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------- Project---- -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projectList">
+                <div class="project">
+                    <img src="images/work-1.jpeg" alt="Arduino Uno">
+                    <div class="layer">
+                        <h3>Fingerprint Door Lock</h3>
+                        <p>Have build one of my projects usint Arduino Uno of which uses biometrics for authentification, I find it more interesting in machine learning and solving problems.</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        
+                   
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/work-2.png" alt="MusicApp">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Have been working on the music app for one month of which it was successfull</p>
+                     
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                   
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/logo.png" alt="MyLogo">
+                    <div class="layer">
+                        <h3>My Logo</h3>
+                        <p>I design logos, flyers and burnners of according to the customers choice and prefference </p>
+                      
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                   
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+           
+        </div>
+    </div>
+    
+
+
+    <!-- ------Contact----- -->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>josejosetechnology@proton.me</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0112701903/ 0704424730</p>
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="CV/CURRICULUM VITAE.rar" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/myyaplrz" method="POST">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" id="" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Joseph.O <i class="fa-solid fa-heart"></i> Thankyou for visiting</p>
+        </div>
+
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+    function openmenu(){
+        sidemenu.style.right="0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+
+    }
+</script>
+    
+</body>
+</html>
